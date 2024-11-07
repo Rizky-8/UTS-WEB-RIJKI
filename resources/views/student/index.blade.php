@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="d-flex justify-content-between mb-3">
-                <h4>Data Mahasiswa</h4>
+                <h4>Data Mahasiswa Fitra Rosdiani</h4>
                 <a href="{{ route('student.create') }}" class="btn btn-warning btn-sm">Create</a>
             </div>
             @if(session('success'))
