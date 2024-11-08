@@ -5,8 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="d-flex justify-content-between mb-3">
-                <h4>Data Mahasiswa Fitra Rosdiani</h4>
-                <a href="{{ route('student.create') }}" class="btn btn-warning btn-sm">Create</a>
+                <h4>Data Mahasiswa</h4>
+                <a href="{{ route('student.create') }}" class="btn btn-primary btn-sm">Tambah Data</a>
             </div>
             @if(session('success'))
                 <p>{{ session('success') }}</p>
@@ -37,7 +37,7 @@
                                 <td>{{ $s->tanggal_lahir }}</td>
                                 <td class="text-center">
                                     <div class="btn-group" role="group">
-                                        <a href="{{ route('student.show', $s->id) }}" class="btn btn-info btn-sm">Show</a>
+                                        <a href="{{ route('student.show', $s->id) }}" class="btn btn-secondary btn-sm">Show</a>
                                         <a href="{{ route('student.edit', $s->id) }}" class="btn btn-warning btn-sm">Edit</a>
                                         <form action="{{ route('student.destroy', $s->id) }}" method="POST" style="display: inline-block">
                                             @csrf
